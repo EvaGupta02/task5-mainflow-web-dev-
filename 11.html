@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+.canva-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f0f0f0;
+}
+
+.canva-editor {
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  background-color: #fff;
+}
+
+.left-panel {
+  display: flex;
+  flex-direction: column;
+  width: 200px;
+  margin-right: 20px;
+}
+
+.left-panel-item {
+  padding: 10px;
+  border-bottom: 1px solid #ccc;
+}
+
+.left-panel-item:last-child {
+  border-bottom: none;
+}
+
+.right-panel {
+  flex: 1;
+}
+
+.right-panel-header {
+  background-color: #f0f0f0;
+  padding: 10px;
+  margin-bottom: 20px;
+}
+
+.right-panel-content {
+  padding: 20px;
+}
+
+.table-container {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-container th,
+.table-container td {
+  padding: 8px;
+  border: 1px solid #ccc;
+  text-align: left;
+}
+
+.table-container th {
+  background-color: #f0f0f0;
+}
+
+.create-lead {
+  background-color: #4CAF50;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+</style>
+</head>
+<body>
+<div class="canva-container">
+  <div class="canva-editor">
+    <div class="left-panel">
+      <div class="left-panel-item">
+        <img src="C:\Users\enaev\OneDrive\Desktop\pic.jpeg" alt="Canva Logo" height="50" width="100">
+      </div>
+      <div class="left-panel-item">
+        <p>Tables</p>
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+          <div style="border: 1px solid #ccc; height: 50px;"></div>
+          <div style="border: 1px solid #ccc; height: 50px;"></div>
+          <div style="border: 1px solid #ccc; height: 50px;"></div>
+        </div>
+      </div>
+      <div class="left-panel-item">
+        <p>Graphics</p>
+        <div style="display: flex; justify-content: center; align-items: center; height: 50px;">
+          <svg width="50" height="50" viewBox="0 0 50 50">
+            <circle cx="25" cy="25" r="20" fill="#ccc" />
+          </svg>
+        </div>
+      </div>
+      <div class="left-panel-item">
+        <p>Charts</p>
+        <div style="display: flex; justify-content: center; align-items: center; height: 50px;">
+          <svg width="50" height="50" viewBox="0 0 50 50">
+            <circle cx="25" cy="25" r="20" fill="#ccc" />
+          </svg>
+        </div>
+      </div>
+      <div class="left-panel-item">
+        <p>Photos</p>
+        <div style="display: flex; justify-content: space-between; align-items: center; height: 50px;">
+          <div style="border: 1px solid #ccc; width: 50px; height: 50px;"></div>
+          <div style="border: 1px solid #ccc; width: 50px; height: 50px;"></div>
+          <div style="border: 1px solid #ccc; width: 50px; height: 50px;"></div>
+        </div>
+      </div>
+      <div class="left-panel-item">
+        <p>Videos</p>
+        <div style="display: flex; justify-content: space-between; align-items: center; height: 50px;">
+          <div style="border: 1px solid #ccc; width: 50px; height: 50px;"></div>
+          <div style="border: 1px solid #ccc; width: 50px; height: 50px;"></div>
+          <div style="border: 1px solid #ccc; width: 50px; height: 50px;"></div>
+        </div>
+      </div>
+    </div>
+    <div class="right-panel">
+      <div class="right-panel-header">
+        <h1 style="margin: 0;">Holiday Packing</h1>
+      </div>
+      <div class="right-panel-content">
+        <p style="margin-bottom: 20px;">To organise</p>
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+          <input type="checkbox" style="margin-right: 10px;" checked>
+          <p style="margin: 0;">Call dog sitter</p>
+        </div>
+        <div style="display: flex; align-items: center; margin-bottom: 20px;">
+          <input type="checkbox" style="margin-right: 10px;">
+          <p style="margin: 0;">Purchase travel insurance</p>
+        </div>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Item</th>
+                <th>Packed</th>
+                <th>Item</th>
+                <th>Packed</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Passport</td>
+                <td><input type="checkbox"></td>
+                <td>Sandals</td>
+                <td><input type="checkbox" checked></td>
+              </tr>
+              <tr>
+                <td>Plane tickets</td>
+                <td><input type="checkbox" checked></td>
+                <td>Sun hat</td>
+                <td><input type="checkbox" checked></td>
+              </tr>
+              <tr>
+                <td>Swimmers</td>
+                <td><input type="checkbox"></td>
+                <td>Umbrella</td>
+                <td><input type="checkbox" checked></td>
+              </tr>
+              <tr>
+                <td>Beach towels</td>
+                <td><input type="checkbox"></td>
+                <td>Kids' toys</td>
+                <td><input type="checkbox"></td>
+              </tr>
+              <tr>
+                <td>Sunscreen</td>
+                <td><input type="checkbox" checked></td>
+                <td>Water bottle</td>
+                <td><input type="checkbox"></td>
+              </tr>
+              <tr>
+                <td>Book</td>
+                <td><input type="checkbox"></td>
+                <td>Sunglasses</td>
+                <td><input type="checkbox" checked></td>
+              </tr>
+              <tr>
+                <td>Kids' books</td>
+                <td><input type="checkbox"></td>
+                <td>Beach bag</td>
+                <td><input type="checkbox" checked></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <button class="create-lead">Create To-Do List Lead</button>
+      </div>
+    </div>
+  </div>
+</div>
+</body>
+</html>
